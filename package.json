@@ -1,0 +1,40 @@
+{
+  "name": "babelone-seed",
+  "version": "0.0.1",
+  "description": "Seed project for implementing backbonejs with es6 and babel transpiler",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ./src/**/*_test.js -R nyan",
+    "lint": "globstar --node -- eslint ./src/**/*.js -f node_modules/eslint-friendly-formatter",
+    "browserify": "browserify -e ./src/app.js -t babelify > ./dist/scripts/app.min.js",
+    "browserify:dev": "browserify --debug -e ./src/app.js -t [babelify --sourceMapRelative .] | exorcist ./dist/scripts/app.min.js.map > ./dist/scripts/app.min.js"
+  },
+  "keywords": [
+    "Babel",
+    "es6",
+    "BackboneES6"
+  ],
+  "author": "Marco Romero",
+  "license": "MIT",
+  "dependencies": {
+    "babelify": "^6.0.2",
+    "backbone": "^1.1.2",
+    "browserify": "^9.0.8",
+    "react": "^0.13.0-rc2"
+  },
+  "devDependencies": {
+    "babel-eslint": "^3.1.1",
+    "chai": "^2.2.0",
+    "eslint": "^0.20.0",
+    "eslint-friendly-formatter": "^1.0.5",
+    "eslint-plugin-react": "^2.2.0",
+    "globstar": "^1.0.0",
+    "gulp": "^3.8.11",
+    "gulp-connect": "^2.2.0",
+    "gulp-jade": "^1.0.0",
+    "mocha": "^2.2.4",
+    "sinon": "^1.14.1",
+    "stylus": "^0.51.0",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}
