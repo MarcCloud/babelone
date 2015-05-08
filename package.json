@@ -1,6 +1,6 @@
 {
   "name": "babelone-seed",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Seed project for implementing backbonejs with es6 and babel transpiler",
   "main": "index.js",
   "scripts": {
