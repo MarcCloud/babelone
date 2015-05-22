@@ -7,13 +7,14 @@
     "pretest": "npm run lint",
     "test": "mocha ./src/**/*_test.js -R nyan",
     "lint": "globstar --node -- eslint ./src/**/*.js -f node_modules/eslint-friendly-formatter",
-    "prebuild:scripts": "mkdirp ./dist/scripts && npm test",
-    "build:scripts": "browserify ./src/app.js -d -t [babelify --sourceMapRelative .] | exorcist ./dist/scripts/app.min.js.map > ./dist/scripts/app.min.js",
-    "prebuild:styles": "mkdirp ./dist/styles",
-    "build:styles": "stylus -u autoprefixer-stylus -c ./src/app.styl --out ./dist/styles/app.min.css",
-    "build:markup": "",
-    "server": "",
-    "livereload": ""
+    "prescripts": "mkdirp ./dist/scripts && npm test",
+    "scripts": "browserify ./src/app.js -d -t [babelify --sourceMapRelative .] | exorcist ./dist/scripts/app.min.js.map > ./dist/scripts/app.min.js",
+    "prestyles": "mkdirp ./dist/styles",
+    "styles": "stylus -u autoprefixer-stylus -c ./src/app.styl --out ./dist/styles/app.min.css",
+    "markup": "jade ./src/index.jade -o ./dist",
+    "markup:dev":"npm run markup -- -P --obj \"{dev:true}\"",
+    "server": "http-server ./dist -p 3000",
+    "livereload": "live-reload --port 9091"
   },
   "keywords": [
     "Babel",
