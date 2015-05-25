@@ -37,25 +37,23 @@
     "react": "~0.13.0-rc2"
   },
   "devDependencies": {
-    "autoprefixer-stylus": "^0.6.0",
+    "autoprefixer-stylus": "~0.6.0",
     "babel-eslint": "~3.1.1",
+    "babelify": "~6.1.1",
     "chai": "~2.2.0",
-    "clean-dir": "^1.0.3",
-    "cssmin": "^0.4.3",
+    "clean-dir": "~1.0.3",
     "eslint": "~0.20.0",
     "eslint-friendly-formatter": "~1.0.5",
     "eslint-plugin-react": "~2.2.0",
     "exorcist": "~0.3.0",
     "globstar": "~1.0.0",
-    "gulp": "~3.8.11",
-    "gulp-connect": "~2.2.0",
-    "gulp-jade": "~1.0.0",
-    "live-reload": "^1.1.0",
-    "minifyify": "^7.0.0",
-    "mkdirp": "^0.5.0",
+    "live-reload": "~1.1.0",
+    "minifyify": "~7.0.0",
+    "mkdirp": "~0.5.0",
     "mocha": "~2.2.4",
+    "onchange": "~1.1.0",
+    "parallelshell": "~1.1.1",
     "sinon": "~1.14.1",
-    "stylus": "^0.51.1",
-    "vinyl-source-stream": "~1.1.0"
+    "stylus": "~0.51.1"
   }
 }
