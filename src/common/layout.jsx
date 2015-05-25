@@ -2,7 +2,7 @@ import React from "react";
 
 class HelloMessage extends React.Component {
     render() {
-        return (<div> to {this.props.name}</div>);
+        return (<div>Howdy to {this.props.name}</div>);
     }
 }
 
